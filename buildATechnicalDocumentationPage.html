@@ -3,10 +3,11 @@
   <head>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-  
+  <body id="main-doc">
+    <div id="main-grid-container">
+    <div id="main-grid1">   
     <nav id="navbar">
-      <header>JS Documentation</header>
+      <header><h6>JS Documentation</h6></header>
       <ul>
         <li><a class="nav-link" href="#Introduction">Introduction</a></li>
         <li>
@@ -19,7 +20,7 @@
             >JavaScript and Java</a
           >
         </li>
-li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
         <li><a class="nav-link" href="#Variables">Variables</a></li>
         <li>
           <a class="nav-link" href="#Declaring_variables"
@@ -37,8 +38,6 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
             >if...else statement</a
           >
         </li>
-
- </li>
         <li><a class="nav-link" href="#while_statement">while statement</a></li>
         <li>
           <a class="nav-link" href="#Function_declarations"
@@ -47,7 +46,8 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
         </li>
         <li><a class="nav-link" href="#Reference">Reference</a></li>
       </ul>
-    </nav>
+    </nav></div>
+      <div id="main-grid2">
     <main id="main-doc">
       <section class="main-section" id="Introduction">
         <header>Introduction</header>
@@ -59,16 +59,16 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
             (for example, a web browser), JavaScript can be connected to the
             objects of its environment to provide programmatic control over
             them.
- </p>
+          </p>
 
-  <p>
+          <p>
             JavaScript contains a standard library of objects, such as Array,
             Date, and Math, and a core set of language elements such as
             operators, control structures, and statements. Core JavaScript can
             be extended for a variety of purposes by supplementing it with
             additional objects; for example:
           </p>
- <ul>
+          <ul>
             <li>
               Client-side JavaScript extends the core language by supplying
               objects to control a browser and its Document Object Model (DOM).
@@ -87,7 +87,7 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
           </ul>
         </article>
       </section>
-<section class="main-section" id="What_you_should_already_know">
+      <section class="main-section" id="What_you_should_already_know">
         <header>What you should already know</header>
         <article>
           <p>This guide assumes you have the following basic background:</p>
@@ -105,8 +105,7 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
           </ul>
         </article>
       </section>
-
- <section class="main-section" id="JavaScript_and_Java">
+      <section class="main-section" id="JavaScript_and_Java">
         <header>JavaScript and Java</header>
         <article>
           <p>
@@ -117,7 +116,8 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
             and basic control-flow constructs which was the reason why it was
             renamed from LiveScript to JavaScript.
           </p>
- <p>
+
+          <p>
             In contrast to Java's compile-time system of classes built by
             declarations, JavaScript supports a runtime system based on a small
             number of data types representing numeric, Boolean, and string
@@ -137,8 +137,7 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
           </p>
         </article>
       </section>
-
- <section class="main-section" id="Hello_world">
+      <section class="main-section" id="Hello_world">
         <header>Hello world</header>
         <article>
           To get started with writing JavaScript, open the Scratchpad and write
@@ -154,8 +153,7 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
       </section>
       <section class="main-section" id="Variables">
         <header>Variables</header>
-
- <p>
+        <p>
           You use variables as symbolic names for values in your application.
           The names of variables, called identifiers, conform to certain rules.
         </p>
@@ -172,7 +170,7 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
           characters in identifiers. Some examples of legal names are
           Number_hits, temp99, and _name.
         </p>
-</section>
+      </section>
       <section class="main-section" id="Declaring_variables">
         <header>Declaring variables</header>
         <article>
@@ -192,8 +190,7 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
             syntax can be used to declare a block scope local variable. See
             Variable scope below.
           </p>
-
- </article>
+        </article>
       </section>
       <section class="main-section" id="Variable_scope">
         <header>Variable scope</header>
@@ -214,8 +211,7 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
             function (or global context) within which x is declared, not the
             block, which in this case is an if statement.
           </p>
-
- <code>if (true) { var x = 5; } console.log(x); // 5</code>
+          <code>if (true) { var x = 5; } console.log(x); // 5</code>
           <p>
             This behavior changes, when using the let declaration introduced in
             ECMAScript 2015.
@@ -230,7 +226,7 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
       <section class="main-section" id="Global_variables">
         <header>Global variables</header>
         <article>
-<p>
+          <p>
             Global variables are in fact properties of the global object. In web
             pages the global object is window, so you can set and access global
             variables using the window.variable syntax.
@@ -245,7 +241,7 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
           </p>
         </article>
       </section>
-<section class="main-section" id="Constants">
+      <section class="main-section" id="Constants">
         <header>Constants</header>
         <article>
           <p>
@@ -260,7 +256,8 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
             A constant cannot change value through assignment or be re-declared
             while the script is running. It has to be initialized to a value.
           </p>
- <p>
+
+          <p>
             The scope rules for constants are the same as those for let block
             scope variables. If the const keyword is omitted, the identifier is
             assumed to represent a variable.
@@ -270,7 +267,8 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
             You cannot declare a constant with the same name as a function or
             variable in the same scope. For example:
           </p>
-  <code
+
+          <code
             >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
             WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
             //statements }</code
@@ -291,7 +289,7 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
             <li>
               <p>Six data types that are primitives:</p>
               <ul>
-<li>Boolean. true and false.</li>
+                <li>Boolean. true and false.</li>
                 <li>
                   null. A special keyword denoting a null value. Because
                   JavaScript is case-sensitive, null is not the same as Null,
@@ -309,7 +307,7 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
               </ul>
             </li>
 
- <li>and Object</li>
+            <li>and Object</li>
           </ul>
           Although these data types are a relatively small amount, they enable
           you to perform useful functions with your applications. Objects and
@@ -324,7 +322,8 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
           Use the if statement to execute a statement if a logical condition is
           true. Use the optional else clause to execute a statement if the
           condition is false. An if statement looks as follows:
- <code>if (condition) { statement_1; } else { statement_2; }</code>
+
+          <code>if (condition) { statement_1; } else { statement_2; }</code>
           condition can be any expression that evaluates to true or false. See
           Boolean for an explanation of what evaluates to true and false. If
           condition evaluates to true, statement_1 is executed; otherwise,
@@ -335,7 +334,7 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
             conditions tested in sequence, as follows:
           </p>
           <code
-  >if (condition_1) { statement_1; } else if (condition_2) {
+            >if (condition_1) { statement_1; } else if (condition_2) {
             statement_2; } else if (condition_n) { statement_n; } else {
             statement_last; }
           </code>
@@ -345,7 +344,7 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
           general, it's good practice to always use block statements, especially
           when nesting if statements:
 
-  <code
+          <code
             >if (condition) { statement_1_runs_if_condition_is_true;
             statement_2_runs_if_condition_is_true; } else {
             statement_3_runs_if_condition_is_false;
@@ -361,7 +360,7 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
           <code>if ((x = y)) { /* statements here */ }</code>
         </article>
       </section>
- <section class="main-section" id="while_statement">
+      <section class="main-section" id="while_statement">
         <header>while statement</header>
         <article>
           A while statement executes its statements as long as a specified
@@ -377,7 +376,8 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
             condition is tested again. If the condition returns false, execution
             stops and control is passed to the statement following while.
           </p>
- <p>
+
+          <p>
             To execute multiple statements, use a block statement ({ ... }) to
             group those statements.
           </p>
@@ -393,7 +393,8 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
             With each iteration, the loop increments n and adds that value to x.
             Therefore, x and n take on the following values:
           </p>
- <ul>
+
+          <ul>
             <li>After the first pass: n = 1 and x = 1</li>
             <li>After the second pass: n = 2 and x = 3</li>
             <li>After the third pass: n = 3 and x = 6</li>
@@ -411,7 +412,7 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
           statement) consists of the function keyword, followed by:
 
           <ul>
- <li>The name of the function.</li>
+            <li>The name of the function.</li>
             <li>
               A list of arguments to the function, enclosed in parentheses and
               separated by commas.
@@ -457,6 +458,7 @@ li><a class="nav-link" href="#Hello_world">Hello world</a></li>
           </ul>
         </article>
       </section>
-    </main>
+    </main></div></div>
+
   </body>
 </html>
